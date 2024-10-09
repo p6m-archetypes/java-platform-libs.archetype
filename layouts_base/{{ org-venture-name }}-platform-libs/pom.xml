@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>{{ group-id }}</groupId>
+    <artifactId>{{ artifact-id }}</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <scm>
+        <!--suppress MavenModelInspection -->
+        <developerConnection>
+            scm:git:https://${env.BUILD_USER_NAME}:${env.BUILD_USER_KEY}@gitlab.com/${env.CI_PROJECT_NAMESPACE}/${env.CI_PROJECT_NAME}
+        </developerConnection>
+    </scm>
+
+    <modules>
+        <module>{{ org-venture-name }}-dependencies</module>
+        <module>{{ org-venture-name }}-graphql-maven-plugin</module>
+        <module>{{ org-venture-name }}-parent</module>
+        <module>{{ org-venture-name }}-platform</module>
+        <module>{{ org-venture-name }}-platform-auth</module>
+        <module>{{ org-venture-name }}-platform-aws</module>
+        <module>{{ org-venture-name }}-platform-bom</module>
+        <module>{{ org-venture-name }}-platform-data</module>
+        <module>{{ org-venture-name }}-platform-errorhandling</module>
+        <module>{{ org-venture-name }}-platform-logging</module>
+        <module>{{ org-venture-name }}-platform-persistence-jpa</module>
+        <module>{{ org-venture-name }}-platform-proto</module>
+        <module>{{ org-venture-name }}-platform-test</module>
+        <module>{{ org-venture-name }}-platform-tracing</module>
+        <module>{{ org-venture-name }}-platform-validation</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>{{ org-venture-name }}-libs-release</name>
+            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-venture-name }}-libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>{{ org-venture-name }}-libs-snapshot</name>
+            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-venture-name }}-libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

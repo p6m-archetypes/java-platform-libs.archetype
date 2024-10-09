@@ -1,0 +1,17 @@
+---
+description: "Java Multi Module Library"
+authors:
+  [
+    "Jimmie Fulton"
+  ]
+languages: ["Java"]
+frameworks: ["Maven"]
+tags: ["Maven", "Library"]
+
+requires:
+  archetect: 2.0.0-ALPHA.15
+
+components:
+  org-prompts: git@github.com:p6m-dev/org-prompts.archetype.git
+  java-project-attributes: git@github.com:p6m-dev/java-project-attributes.archetype.git
+  gitignore: https://github.com/archetect/dot-gitignore.archetype.git

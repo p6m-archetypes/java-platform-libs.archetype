@@ -1,0 +1,13 @@
+---
+name: Build Library
+
+on:
+  - push
+  - workflow_dispatch
+
+jobs:
+  build_and_publish_snapshots:
+    uses: p6m-dev/github-actions/.github/workflows/build-deploy-library.yaml@main
+    secrets:
+      ARTIFACTORY_USERNAME: ${{'{'}}{ secrets.ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_IDENTITY_TOKEN: ${{'{'}}{ secrets.ARTIFACTORY_IDENTITY_TOKEN }}

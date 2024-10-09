@@ -1,0 +1,19 @@
+---
+name: Tag & Release
+run-name: Tag & Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+  workflow_dispatch:
+
+jobs:
+  tag_version:
+    name: Tag Version
+    uses: p6m-dev/github-actions/.github/workflows/cut-tag-maven-library.yml@main
+    secrets:
+      ARTIFACTORY_USERNAME: ${{'{'}}{ secrets.ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_IDENTITY_TOKEN: ${{'{'}}{ secrets.ARTIFACTORY_IDENTITY_TOKEN }}
