@@ -6,7 +6,7 @@ public class IdentityProviderResolver {
         if (issuer.toLowerCase().contains("auth0")) {
             return IdentityProvider.AUTH0;
         } else if (issuer.toLowerCase().contains("p6m.dev")) {
-            return IdentityProvider.P_AUTH;
+            return IdentityProvider.P6M_AUTH;
         } else {
             return null;
         }
