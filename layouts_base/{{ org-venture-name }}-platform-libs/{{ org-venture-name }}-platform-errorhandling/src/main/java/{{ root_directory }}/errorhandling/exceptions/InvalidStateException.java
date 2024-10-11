@@ -18,7 +18,7 @@ import java.util.function.Supplier;
  * analogous to {@link IllegalStateException}.
  * This exception maps to a {@link Code.FAILED_PRECONDITION}.
  */
-public class InvalidStateException extends {{ VentureName }}Exception {
+public class InvalidStateException extends {{ SolutionName }}Exception {
   private final String resourceName;
   private final String invalidState;
   private final String requestedAction;

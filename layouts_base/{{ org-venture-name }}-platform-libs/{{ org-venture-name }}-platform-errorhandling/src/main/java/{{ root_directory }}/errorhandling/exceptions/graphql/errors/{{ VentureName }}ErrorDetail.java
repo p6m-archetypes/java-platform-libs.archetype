@@ -4,12 +4,12 @@ import com.netflix.graphql.types.errors.ErrorDetail;
 import com.netflix.graphql.types.errors.ErrorType;
 import graphql.GraphQLError;
 
-public enum {{ VentureName }}ErrorDetail implements ErrorDetail {
+public enum {{ SolutionName }}ErrorDetail implements ErrorDetail {
   RESOURCE_ALREADY_EXISTS(ErrorType.BAD_REQUEST);
 
   private final ErrorType errorType;
 
-  {{ VentureName }}ErrorDetail(ErrorType errorType) {
+  {{ SolutionName }}ErrorDetail(ErrorType errorType) {
     this.errorType = errorType;
   }
 

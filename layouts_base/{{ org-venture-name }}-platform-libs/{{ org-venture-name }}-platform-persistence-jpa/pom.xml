@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>{{ group-id }}</groupId>
-        <artifactId>{{ org-venture-name }}-dependencies</artifactId>
+        <artifactId>{{ org-solution-name }}-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../{{ org-venture-name }}-dependencies</relativePath>
+        <relativePath>../{{ org-solution-name }}-dependencies</relativePath>
     </parent>
 
-    <artifactId>{{ org-venture-name }}-platform-persistence-jpa</artifactId>
+    <artifactId>{{ org-solution-name }}-platform-persistence-jpa</artifactId>
 
     <dependencies>
         <dependency>

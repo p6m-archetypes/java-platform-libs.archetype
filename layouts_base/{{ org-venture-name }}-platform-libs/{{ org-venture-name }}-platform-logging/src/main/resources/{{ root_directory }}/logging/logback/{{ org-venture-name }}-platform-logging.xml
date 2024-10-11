@@ -10,7 +10,7 @@ initialization performed by Boot
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <if condition='isDefined("LOGGING_STRUCTURED")'>
         <then>
-            <include resource="{{ root_directory }}/logging/logback/{{ org-venture-name }}-platform-structured-appender.xml"/>
+            <include resource="{{ root_directory }}/logging/logback/{{ org-solution-name }}-platform-structured-appender.xml"/>
         </then>
         <else>
             <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>

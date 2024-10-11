@@ -3,7 +3,7 @@ package {{ root_package }}.errorhandling.exceptions;
 import com.google.rpc.Code;
 import com.google.rpc.Status;
 
-public class TokenValidationException extends {{ VentureName }}Exception {
+public class TokenValidationException extends {{ SolutionName }}Exception {
 
     private static final String ACCESS_DENIED_MESSAGE = "Access is denied";
 

@@ -4,64 +4,64 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>{{ group-id }}</groupId>
-        <artifactId>{{ org-venture-name }}-dependencies</artifactId>
+        <artifactId>{{ org-solution-name }}-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../{{ org-venture-name }}-dependencies</relativePath>
+        <relativePath>../{{ org-solution-name }}-dependencies</relativePath>
     </parent>
 
-    <artifactId>{{ org-venture-name }}-platform-bom</artifactId>
+    <artifactId>{{ org-solution-name }}-platform-bom</artifactId>
     <packaging>pom</packaging>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-auth</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-auth</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-aws</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-aws</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-data</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-errorhandling</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-errorhandling</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-logging</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-logging</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-persistence-jpa</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-persistence-jpa</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-proto</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-proto</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-test</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-tracing</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-tracing</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>{{ org-venture-name }}-platform-validation</artifactId>
+                <artifactId>{{ org-solution-name }}-platform-validation</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

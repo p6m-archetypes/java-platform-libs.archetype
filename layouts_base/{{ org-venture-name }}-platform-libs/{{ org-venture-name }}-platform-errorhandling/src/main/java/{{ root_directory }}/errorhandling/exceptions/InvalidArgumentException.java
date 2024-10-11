@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * This exception maps to a {@link Code.INVALID_ARGUMENT} status which includes a map of field to violation message in
  * the {@link BadRequest}.
  */
-public class InvalidArgumentException extends {{ VentureName }}Exception {
+public class InvalidArgumentException extends {{ SolutionName }}Exception {
     private final Map<String, String> fieldToDescription;
 
     public InvalidArgumentException(Map<String, String> fieldToDescription) {

@@ -49,7 +49,7 @@ enum CurrencyDto {
     CAD = 2;
 }
 
-message {{ VentureName }}StatusCodeValue{
+message {{ SolutionName }}StatusCodeValue{
     repeated string tags = 1;
 }
 

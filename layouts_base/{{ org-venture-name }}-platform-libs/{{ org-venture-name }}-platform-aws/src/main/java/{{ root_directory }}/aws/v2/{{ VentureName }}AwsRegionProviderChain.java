@@ -5,9 +5,9 @@ import software.amazon.awssdk.regions.providers.AwsRegionProviderChain;
 import software.amazon.awssdk.regions.providers.InstanceProfileRegionProvider;
 import software.amazon.awssdk.regions.providers.SystemSettingsRegionProvider;
 
-public class {{ VentureName }}AwsRegionProviderChain extends AwsRegionProviderChain {
+public class {{ SolutionName }}AwsRegionProviderChain extends AwsRegionProviderChain {
 
-  public {{ VentureName }}AwsRegionProviderChain() {
+  public {{ SolutionName }}AwsRegionProviderChain() {
     super(
         new SystemSettingsRegionProvider(),
         new AwsProfileRegionProvider(),

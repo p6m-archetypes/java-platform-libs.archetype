@@ -14,7 +14,7 @@ import java.util.Map;
  * An exception that indicates improper arguments were provided in the request. This exception maps to
  * a {@link Code.UNIMPLEMENTED} status which includes the attempted operation in the message.
  */
-public class UnimplementedOperationException extends {{ VentureName }}Exception {
+public class UnimplementedOperationException extends {{ SolutionName }}Exception {
 
     private final String operation;
     private UnimplementedOperationException(String operation) {

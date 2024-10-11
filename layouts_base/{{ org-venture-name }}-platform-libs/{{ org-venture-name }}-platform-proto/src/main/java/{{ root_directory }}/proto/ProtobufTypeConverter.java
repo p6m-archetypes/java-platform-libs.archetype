@@ -6,8 +6,8 @@ import com.google.protobuf.Int32Value;
 import com.google.protobuf.StringValue;
 import com.google.protobuf.Timestamp;
 import com.google.type.Money;
-import {{ root_package }}.data.status.codes.Immutable{{ VentureName }}StatusCode;
-import {{ root_package }}.data.status.codes.{{ VentureName }}StatusCode;
+import {{ root_package }}.data.status.codes.Immutable{{ SolutionName }}StatusCode;
+import {{ root_package }}.data.status.codes.{{ SolutionName }}StatusCode;
 import {{ root_package }}.errorhandling.exceptions.InvalidArgumentException;
 import {{ root_package }}.v1.types.BigDecimalValue;
 import {{ root_package }}.v1.types.CurrencyDto;
@@ -16,7 +16,7 @@ import {{ root_package }}.v1.types.NullableInt;
 import {{ root_package }}.v1.types.NullableString;
 import {{ root_package }}.v1.types.PercentageValue;
 import {{ root_package }}.v1.types.UuidValue;
-import {{ root_package }}.v1.types.{{ VentureName }}StatusCodeValue;
+import {{ root_package }}.v1.types.{{ SolutionName }}StatusCodeValue;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -305,12 +305,12 @@ public final class ProtobufTypeConverter {
         }
     }
 
-    public static {{ VentureName }}StatusCode to{{ VentureName }}StatusCode({{ VentureName }}StatusCodeValue {{ ventureName }}StatusCodeValue){
-        return Immutable{{ VentureName }}StatusCode.builder().addAllTags({{ ventureName }}StatusCodeValue.getTagsList()).build();
+    public static {{ SolutionName }}StatusCode to{{ SolutionName }}StatusCode({{ SolutionName }}StatusCodeValue {{ solutionName }}StatusCodeValue){
+        return Immutable{{ SolutionName }}StatusCode.builder().addAllTags({{ solutionName }}StatusCodeValue.getTagsList()).build();
     }
 
-    public static {{ VentureName }}StatusCodeValue to{{ VentureName }}StatusCodeValue({{ VentureName }}StatusCode {{ ventureName }}StatusCode){
-        return {{ VentureName }}StatusCodeValue.newBuilder().addAllTags({{ ventureName }}StatusCode.tags()).build();
+    public static {{ SolutionName }}StatusCodeValue to{{ SolutionName }}StatusCodeValue({{ SolutionName }}StatusCode {{ solutionName }}StatusCode){
+        return {{ SolutionName }}StatusCodeValue.newBuilder().addAllTags({{ solutionName }}StatusCode.tags()).build();
     }
 
     private ProtobufTypeConverter() {

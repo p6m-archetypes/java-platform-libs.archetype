@@ -18,7 +18,7 @@ import java.util.function.Supplier;
  * An exception that indicates the requested resource was not found. This exception maps to a {@link Code.NOT_FOUND}
  * status which includes the resources name and type and optionally a description and its owner in the {@link ResourceInfo}.
  */
-public class ResourceNotFoundException extends {{ VentureName }}Exception {
+public class ResourceNotFoundException extends {{ SolutionName }}Exception {
     private final String resourceType;
     private final String resourceName;
     private final Optional<String> owner;

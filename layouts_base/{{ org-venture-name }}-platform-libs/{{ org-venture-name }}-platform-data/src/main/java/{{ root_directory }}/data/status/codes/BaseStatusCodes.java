@@ -5,10 +5,10 @@ package {{ root_package }}.data.status.codes;
  * consistent builders.
  */
 public class BaseStatusCodes {
-  public static final Immutable{{ VentureName }}StatusCode.Builder TRANSACTION_BASE = Immutable{{ VentureName }}StatusCode.
+  public static final Immutable{{ SolutionName }}StatusCode.Builder TRANSACTION_BASE = Immutable{{ SolutionName }}StatusCode.
       builder()
       .addTags("transaction");
-  public static final Immutable{{ VentureName }}StatusCode.Builder ACCOUNT_BASE = Immutable{{ VentureName }}StatusCode.
+  public static final Immutable{{ SolutionName }}StatusCode.Builder ACCOUNT_BASE = Immutable{{ SolutionName }}StatusCode.
       builder()
       .addTags("account");
 }

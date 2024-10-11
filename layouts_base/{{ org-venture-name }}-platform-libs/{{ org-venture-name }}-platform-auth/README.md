@@ -1,4 +1,4 @@
-# {{ VentureName }} Libs: Auth
+# {{ SolutionName }} Libs: Auth
 
 ## Background
 This Library allows you to add authentication to your application. 
@@ -10,8 +10,8 @@ It is a wrapper around the [Spring Security](https://spring.io/projects/spring-s
 ```xml
 <dependencies>
     <dependency>
-        <groupId>{{ org-venture-name }}</groupId>
-        <artifactId>{{ org-venture-name }}-platform-auth</artifactId>
+        <groupId>{{ org-solution-name }}</groupId>
+        <artifactId>{{ org-solution-name }}-platform-auth</artifactId>
 <!-- Version will be set with bom import in root pom.xml -->
     </dependency>
 </dependencies>
@@ -52,7 +52,7 @@ It is a wrapper around the [Spring Security](https://spring.io/projects/spring-s
 4. Access metadata from your token using the JWTService
    1. Import the JWT Service
     ```java
-    import {{ root_package }}.{{ org-venture-name }}.platform.auth.service.JWTService;
+    import {{ root_package }}.{{ org-solution-name }}.platform.auth.service.JWTService;
     
     public class UserFetcher {
       private final JWTService jwtService;

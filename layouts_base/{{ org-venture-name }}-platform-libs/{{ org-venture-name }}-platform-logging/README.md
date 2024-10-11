@@ -1,4 +1,4 @@
-# {{ VentureName }} Libs: Logging
+# {{ SolutionName }} Libs: Logging
 
 To enable this as the logging implementation for a specific module (such as a server):
 
@@ -6,7 +6,7 @@ To enable this as the logging implementation for a specific module (such as a se
 <dependencies>
     <dependency>
         <groupId>{{ root_package }}</groupId>
-        <artifactId>{{ org-venture-name }}-platform-logging</artifactId>
+        <artifactId>{{ org-solution-name }}-platform-logging</artifactId>
     </dependency>
 </dependencies>
 ```
@@ -19,7 +19,7 @@ scope.
 <dependencies>
     <dependency>
         <groupId>{{ root_package }}</groupId>
-        <artifactId>{{ org-venture-name }}-platform-logging</artifactId>
+        <artifactId>{{ org-solution-name }}-platform-logging</artifactId>
         <scope>test</scope>
     </dependency>
 </dependencies>

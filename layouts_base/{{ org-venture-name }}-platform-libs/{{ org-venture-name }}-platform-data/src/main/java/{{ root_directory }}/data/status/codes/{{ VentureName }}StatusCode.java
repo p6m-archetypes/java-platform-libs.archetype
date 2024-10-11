@@ -14,9 +14,9 @@ import org.immutables.value.Value.Immutable;
  */
 
 @Immutable
-@JsonSerialize(as = Immutable{{ VentureName }}StatusCode.class)
-@JsonDeserialize(as = Immutable{{ VentureName }}StatusCode.class)
-public abstract class {{ VentureName }}StatusCode {
+@JsonSerialize(as = Immutable{{ SolutionName }}StatusCode.class)
+@JsonDeserialize(as = Immutable{{ SolutionName }}StatusCode.class)
+public abstract class {{ SolutionName }}StatusCode {
   public abstract List<String> tags();
 
   @Override
@@ -25,12 +25,12 @@ public abstract class {{ VentureName }}StatusCode {
     return String.join("::", tags());
   }
 
-  public static {{ VentureName }}StatusCode fromString(String joinedTags) {
+  public static {{ SolutionName }}StatusCode fromString(String joinedTags) {
     return fromStrings(joinedTags.split("::"));
   }
 
-  public static {{ VentureName }}StatusCode fromStrings(String... tags) {
-    var code = Immutable{{ VentureName }}StatusCode.builder();
+  public static {{ SolutionName }}StatusCode fromStrings(String... tags) {
+    var code = Immutable{{ SolutionName }}StatusCode.builder();
     code.addTags(tags);
     return code.build();
   }

@@ -8,7 +8,7 @@ import graphql.execution.DataFetcherExceptionHandler;
 import graphql.execution.DataFetcherExceptionHandlerParameters;
 import graphql.execution.DataFetcherExceptionHandlerResult;
 import io.grpc.StatusRuntimeException;
-import {{ root_package }}.errorhandling.exceptions.{{ VentureName }}Exception;
+import {{ root_package }}.errorhandling.exceptions.{{ SolutionName }}Exception;
 import {{ root_package }}.errorhandling.exceptions.UnauthorizedException;
 import {{ root_package }}.errorhandling.exceptions.graphql.handlers.StatusRuntimeExceptionHandler;
 
@@ -48,11 +48,11 @@ public class GraphqlExceptionHandler implements DataFetcherExceptionHandler {
                                                                          .build())
                                                     .build();
         }
-        //Added to handle any exception origination from DGS if that exception is of type {{ VentureName }}Exception
-        else if (handlerParameters.getException() instanceof {{ VentureName }}Exception) {
-            var {{ ventureName }}Exception = ({{ VentureName }}Exception) handlerParameters.getException();
+        //Added to handle any exception origination from DGS if that exception is of type {{ SolutionName }}Exception
+        else if (handlerParameters.getException() instanceof {{ SolutionName }}Exception) {
+            var {{ solutionName }}Exception = ({{ SolutionName }}Exception) handlerParameters.getException();
             return DataFetcherExceptionHandlerResult.newResult()
-                                                    .error({{ ventureName }}Exception.toTypedGraphQLError())
+                                                    .error({{ solutionName }}Exception.toTypedGraphQLError())
                                                     .build();
         }
     else {

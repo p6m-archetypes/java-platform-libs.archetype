@@ -11,7 +11,7 @@ public class AwsCoreConfig {
 
     @Bean
     public AWSCredentialsProvider awsCredentialsProvider() {
-        return new {{ VentureName }}AWSCredentialsProviderChain();
+        return new {{ SolutionName }}AWSCredentialsProviderChain();
     }
 
     @Bean

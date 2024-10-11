@@ -15,7 +15,7 @@ import java.util.Map;
  * header, analogous to {@link AuthenticationException}. This exception maps to a {@link
  * Code.PERMISSION_DENIED} status.
  */
-public class UnauthorizedException extends {{ VentureName }}Exception {
+public class UnauthorizedException extends {{ SolutionName }}Exception {
   private final String operation;
   private UnauthorizedException(String operation) {
     super(formatMessage(operation));

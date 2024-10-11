@@ -5,7 +5,7 @@ import com.google.protobuf.Any;
 import com.google.rpc.*;
 import io.grpc.StatusRuntimeException;
 import io.grpc.protobuf.StatusProto;
-import {{ root_package }}.errorhandling.exceptions.{{ VentureName }}Exception;
+import {{ root_package }}.errorhandling.exceptions.{{ SolutionName }}Exception;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
 public class ExceptionHandler {
@@ -21,8 +21,8 @@ public class ExceptionHandler {
     }
 
     private static Status getGoogleErrorStatus(Exception e) {
-        if (e instanceof {{ VentureName }}Exception) {
-            return (({{ VentureName }}Exception) e).toStatus();
+        if (e instanceof {{ SolutionName }}Exception) {
+            return (({{ SolutionName }}Exception) e).toStatus();
         } else if (e instanceof IllegalArgumentException) {
             return getIllegalArgumentStatus((IllegalArgumentException) e);
         } else if (e instanceof UnsupportedOperationException) {
@@ -53,7 +53,7 @@ public class ExceptionHandler {
         var detail = ResourceInfo.newBuilder()
                 .setResourceName("Not Specified")
                 .setResourceType("Endpoint")
-                .setOwner("{{ VentureName }}")
+                .setOwner("{{ SolutionName }}")
                 .setDescription(safelyGetMessage(e))
                 .build();
 

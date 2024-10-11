@@ -9,7 +9,7 @@ import java.util.Optional;
  */
 @JsonSerialize(as = PositiveInt.class)
 @JsonDeserialize(as = PositiveInt.class)
-public class PositiveInt extends {{ VentureName }}Int {
+public class PositiveInt extends {{ SolutionName }}Int {
 
   private PositiveInt(int i) {
     super(i);

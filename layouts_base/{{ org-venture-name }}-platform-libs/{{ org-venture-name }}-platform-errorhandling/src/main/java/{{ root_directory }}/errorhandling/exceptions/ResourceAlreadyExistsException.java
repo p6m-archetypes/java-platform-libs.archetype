@@ -11,9 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Supplier;
-import {{ root_package }}.errorhandling.exceptions.graphql.errors.{{ VentureName }}ErrorDetail;
+import {{ root_package }}.errorhandling.exceptions.graphql.errors.{{ SolutionName }}ErrorDetail;
 
-public class ResourceAlreadyExistsException extends {{ VentureName }}Exception {
+public class ResourceAlreadyExistsException extends {{ SolutionName }}Exception {
 
   private final String resourceType;
   private final String resourceName;
@@ -71,7 +71,7 @@ public class ResourceAlreadyExistsException extends {{ VentureName }}Exception {
     debugInfo.put("description", getDescription());
     debugInfo.put("message", getMessage());
 
-    var errorDetail = {{ VentureName }}ErrorDetail.RESOURCE_ALREADY_EXISTS;
+    var errorDetail = {{ SolutionName }}ErrorDetail.RESOURCE_ALREADY_EXISTS;
 
     return TypedGraphQLError.newBuilder()
         .errorType(ErrorType.BAD_REQUEST)

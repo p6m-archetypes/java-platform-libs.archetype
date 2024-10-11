@@ -21,7 +21,7 @@ import static java.util.stream.Collectors.toList;
  * This exception maps to a {@link Code.INTERNAL} status which includes an exception's message and stacktrace in
  * the {@link DebugInfo}.
  */
-public class FatalServiceException extends {{ VentureName }}Exception {
+public class FatalServiceException extends {{ SolutionName }}Exception {
 
     private final String message;
     private final List<String> stackTrace;

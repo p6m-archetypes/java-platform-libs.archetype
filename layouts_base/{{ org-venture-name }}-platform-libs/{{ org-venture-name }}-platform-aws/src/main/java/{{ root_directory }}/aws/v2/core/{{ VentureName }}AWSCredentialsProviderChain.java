@@ -3,12 +3,12 @@ package {{ root_package }}.aws.v2.core;
 import com.amazonaws.auth.*;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 
-public class {{ VentureName }}AWSCredentialsProviderChain extends AWSCredentialsProviderChain {
+public class {{ SolutionName }}AWSCredentialsProviderChain extends AWSCredentialsProviderChain {
 
-    private static final {{ VentureName }}AWSCredentialsProviderChain INSTANCE
-            = new {{ VentureName }}AWSCredentialsProviderChain();
+    private static final {{ SolutionName }}AWSCredentialsProviderChain INSTANCE
+            = new {{ SolutionName }}AWSCredentialsProviderChain();
 
-    public {{ VentureName }}AWSCredentialsProviderChain() {
+    public {{ SolutionName }}AWSCredentialsProviderChain() {
         super(new EnvironmentVariableCredentialsProvider(),
                 new SystemPropertiesCredentialsProvider(),
                 WebIdentityTokenCredentialsProvider.create(),
@@ -17,7 +17,7 @@ public class {{ VentureName }}AWSCredentialsProviderChain extends AWSCredentials
         );
     }
 
-    public static {{ VentureName }}AWSCredentialsProviderChain getInstance() {
+    public static {{ SolutionName }}AWSCredentialsProviderChain getInstance() {
         return INSTANCE;
     }
 }

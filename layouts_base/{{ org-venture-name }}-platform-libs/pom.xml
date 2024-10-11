@@ -16,33 +16,33 @@
     </scm>
 
     <modules>
-        <module>{{ org-venture-name }}-dependencies</module>
-        <module>{{ org-venture-name }}-graphql-maven-plugin</module>
-        <module>{{ org-venture-name }}-parent</module>
-        <module>{{ org-venture-name }}-platform</module>
-        <module>{{ org-venture-name }}-platform-auth</module>
-        <module>{{ org-venture-name }}-platform-aws</module>
-        <module>{{ org-venture-name }}-platform-bom</module>
-        <module>{{ org-venture-name }}-platform-data</module>
-        <module>{{ org-venture-name }}-platform-errorhandling</module>
-        <module>{{ org-venture-name }}-platform-logging</module>
-        <module>{{ org-venture-name }}-platform-persistence-jpa</module>
-        <module>{{ org-venture-name }}-platform-proto</module>
-        <module>{{ org-venture-name }}-platform-test</module>
-        <module>{{ org-venture-name }}-platform-tracing</module>
-        <module>{{ org-venture-name }}-platform-validation</module>
+        <module>{{ org-solution-name }}-dependencies</module>
+        <module>{{ org-solution-name }}-graphql-maven-plugin</module>
+        <module>{{ org-solution-name }}-parent</module>
+        <module>{{ org-solution-name }}-platform</module>
+        <module>{{ org-solution-name }}-platform-auth</module>
+        <module>{{ org-solution-name }}-platform-aws</module>
+        <module>{{ org-solution-name }}-platform-bom</module>
+        <module>{{ org-solution-name }}-platform-data</module>
+        <module>{{ org-solution-name }}-platform-errorhandling</module>
+        <module>{{ org-solution-name }}-platform-logging</module>
+        <module>{{ org-solution-name }}-platform-persistence-jpa</module>
+        <module>{{ org-solution-name }}-platform-proto</module>
+        <module>{{ org-solution-name }}-platform-test</module>
+        <module>{{ org-solution-name }}-platform-tracing</module>
+        <module>{{ org-solution-name }}-platform-validation</module>
     </modules>
 
     <distributionManagement>
         <repository>
             <id>central</id>
-            <name>{{ org-venture-name }}-libs-release</name>
-            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-venture-name }}-libs-release</url>
+            <name>{{ org-solution-name }}-libs-release</name>
+            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-solution-name }}-libs-release</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>{{ org-venture-name }}-libs-snapshot</name>
-            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-venture-name }}-libs-snapshot</url>
+            <name>{{ org-solution-name }}-libs-snapshot</name>
+            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-solution-name }}-libs-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 </project>

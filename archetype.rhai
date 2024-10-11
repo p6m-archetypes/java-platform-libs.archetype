@@ -27,7 +27,7 @@ context += set("project-suffix", "libs", #{
     ],
 });
 
-context += set("artifact-id", render("{{ org-venture-name }}-{{ project-prefix }}-{{ project-suffix }}", context), #{
+context += set("artifact-id", render("{{ org-solution-name }}-{{ project-prefix }}-{{ project-suffix }}", context), #{
     cases: [
         CasedIdentityCasedValue(PROGRAMMING_CASES),
     ],

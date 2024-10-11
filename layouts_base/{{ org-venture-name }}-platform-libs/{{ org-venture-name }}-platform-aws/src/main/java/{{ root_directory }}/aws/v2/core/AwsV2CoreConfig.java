@@ -24,6 +24,6 @@ public class AwsV2CoreConfig {
 
   @Bean
   public AwsRegionProvider awsRegionProviderV2() {
-    return new {{ VentureName }}AwsRegionProviderChain();
+    return new {{ SolutionName }}AwsRegionProviderChain();
   }
 }
