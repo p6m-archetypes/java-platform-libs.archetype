@@ -38,7 +38,7 @@
                     <artifactId>jib-maven-plugin</artifactId>
                     <configuration>
                         <from>
-                            <image>p6m-dev.jfrog.io/p6m-dev-docker/p6m/amazoncorretto:17-alpine3.17</image>
+                            <image>p6m.jfrog.io/p6m-dev-docker/p6m/amazoncorretto:17-alpine3.17</image>
                         </from>
                     </configuration>
                 </plugin>

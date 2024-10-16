@@ -37,12 +37,12 @@
         <repository>
             <id>central</id>
             <name>{{ org-solution-name }}-libs-release</name>
-            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-solution-name }}-libs-release</url>
+            <url>https://p6m.jfrog.io/artifactory/{{ org-solution-name }}-libs-release</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>{{ org-solution-name }}-libs-snapshot</name>
-            <url>https://p6m-dev.jfrog.io/artifactory/{{ org-solution-name }}-libs-snapshot</url>
+            <url>https://p6m.jfrog.io/artifactory/{{ org-solution-name }}-libs-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
