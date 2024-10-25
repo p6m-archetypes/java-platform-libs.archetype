@@ -5,6 +5,8 @@ on:
   - push
   - workflow_dispatch
 
+permissions: write-all
+
 jobs:
   build_and_publish_snapshots:
     uses: p6m-dev/github-actions/.github/workflows/build-deploy-library.yaml@main
