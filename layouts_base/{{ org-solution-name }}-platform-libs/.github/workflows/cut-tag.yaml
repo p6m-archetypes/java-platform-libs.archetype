@@ -10,6 +10,8 @@ on:
       - '.github/**'
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   tag_version:
     name: Tag Version
