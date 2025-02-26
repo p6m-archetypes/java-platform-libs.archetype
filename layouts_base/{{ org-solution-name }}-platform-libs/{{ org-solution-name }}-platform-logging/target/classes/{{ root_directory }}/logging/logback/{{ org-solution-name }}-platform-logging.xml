@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Console appender logback configuration provided for import, equivalent to the programmatic
+initialization performed by Boot
+-->
+<included>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <if condition='isDefined("LOGGING_STRUCTURED")'>
+        <then>
+            <include resource="{{ root_directory }}/logging/logback/{{ org-solution-name }}-platform-structured-appender.xml"/>
+        </then>
+        <else>
+            <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+        </else>
+    </if>
+</included>
