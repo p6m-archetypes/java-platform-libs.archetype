@@ -15,6 +15,10 @@ context += render(Archetype("java-project-attributes"), ANSWERS + context + #{
     "artifact-id": "platform",
 }, archetype_settings);
 
+context += prompt("Artifactory Host:", "artifactory-host", #{
+    defaults_with: "p6m.jfrog.io",
+  });
+
 context += set("project-prefix", "platform", #{
     cases: [
         CasedIdentityCasedValue(PROGRAMMING_CASES),
